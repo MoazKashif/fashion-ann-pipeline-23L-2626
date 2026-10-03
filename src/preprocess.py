@@ -8,6 +8,9 @@ with open('params.yaml', 'r') as f:
 X_train = np.load('data/raw/X_train.npy') / 255.0
 y_train = np.load('data/raw/y_train.npy')
 X_test = np.load('data/raw/X_test.npy') / 255.0
+X_train = np.load('data/raw/X_train.npy') / 255.00
+y_train = np.load('data/raw/y_train.npy')
+X_test = np.load('data/raw/X_test.npy') / 255.00
 y_test = np.load('data/raw/y_test.npy')
 
 X_train, X_val, y_train, y_val = train_test_split(
